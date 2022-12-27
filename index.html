@@ -1,10 +1,87 @@
 <html>
   <head>
     <title>My Personal Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .section p {
+        line-height: 1.5;
+      }
+      .section img {
+        max-width: 100%;
+        height: auto;
+      }
+      form {
+        max-width: 400px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+      }
+      form input,
+      form textarea,
+      form button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        background-color: #f5f5f5;
+      }
+      form input:focus,
+      form textarea:focus {
+        outline: 2px solid #333;
+      }
+      form button {
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #444;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to My Personal Portfolio</h1>
-    <p>Hi, my name is [Your Name] and I am a [Profession/Skill].</p>
-    <p>You can download my resume <a href="[Resume URL]">here</a>.</p>
+    <header>
+      <h1>Welcome to My Personal Portfolio</h1>
+    </header>
+    <main>
+      <div class="section">
+        <h2>About Me</h2>
+        <p>Hi, my name is [Your Name] and I am a [Profession/Skill]. I have [Number] years of experience in the field and am passionate about [Interests/Values].</p>
+        <img src="[Profile Picture URL]" alt="Profile Picture">
+      </div>
+      <div class="section">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
